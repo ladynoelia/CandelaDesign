@@ -4,16 +4,21 @@
     box-sizing: border-box;    
 }
 body {
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", serif;    
 }
 h1, h2 {
+    font-family: "Montserrat", serif;
     text-align: center;
     padding: 10px;
+}
+h4, h5 {
+    font-family: "Montserrat", serif;
+    color: #6bb2cc;
 }
 .title {
     font-family: "Dancing Script", serif;
     text-align: center;
-    background-color: rgba(255, 127, 80, 0.479);
+    background-color: #F0ada7;
     padding: 20px;
 }
 
@@ -23,26 +28,26 @@ header {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;  
     align-items: center;
-    height: 80px;
+    padding: 10px;
 }
-
+.marca-logo {
+    justify-content: flex-start;
+}
 .marca-logo ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;    
 }
 .marca-logo img {       
     width: 60px;
-    height: 60px;
-    padding-left: 10px;   
+    height: 60px;    
 }
 .marca-logo ul li p {    
     font-family: "Dancing Script", serif;
-    font-size: 40px;   
+    font-size: 40px;
+    color: #F0ada7;    
 }
 
 .nav-header ul {
@@ -54,15 +59,17 @@ header {
 .nav-header ul li {
     display: inline;
     font-family: "Montserrat", serif;        
-    margin: 10px;    
+    margin: 10px;
+    color: #F0ada7;  
 }
 
 .buscador ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;       
+    justify-content: flex-end;
+    align-content: center;
+           
 }
 .buscador img {    
     width: 30px;
@@ -72,7 +79,7 @@ header {
     font-family: "Montserrat", serif;
 }
 .btn-1:hover {
-    border-color: rgb(247, 190, 169);
+    border-color: #F0ada7;
 }
 .btn-2 {
     font-family: "Montserrat", serif;
@@ -85,76 +92,106 @@ header {
 /* ---- Main Index---- */
 
 main {
-    background-color: rgb(255, 233, 230);
-    
+    background-color: #f7e3da;
+    flex-grow: 1;  
 }
 
 .inicio {
-    position: relative;
-}
-.inicio img {
-    width: 100%;
-    height: 30%;    
-}
-.inicio h1 {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    font-family: "Dancing Script", serif;
+    padding: 30px;
+    background-image: url(./images/index/inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ---- Nosotros ---- */
 
+.sector-personas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2%;
+}
 .personas {
-    display: inline-block;
-    margin: 20px;
-    width: 300px;
+    border: solid;
+    border-width: 1px;
+    border-color: #6bb2cc;
+    border-radius: 10px;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "imagen h2"
+    "imagen p"; 
 }
 .personas img {
-    width: 300px;
-    border-radius: 20px;        
+    width: 100%;
+    border-radius: 10px;
+    grid-area: imagen;    
+}
+.personas h2 {
+    font-family: "Montserrat", serif;
+    color: #6bb2cc;
+    grid-area: h2;   
 }
 .personas p {
+    font-family: "Montserrat", serif;   
     text-align: justify;
-    font-family: "Montserrat", serif;
+    grid-area: p;
+    margin: 2%;
 }
 
-.img-taller img {
-    display: inline-block;
-    width: 300px;
+.img-taller {
+    margin: 3%;
 }
 
 /* ---- Productos ---- */
 
-.main-productos {
+.sector-productos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    margin: 2%;
 }
-.producto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: brown;
-    margin: 5px;
-    
+.producto {    
+    border: solid;
+    border-width: 1px;
+    border-color: #6bb2cc;
+    border-radius: 10px;
+    margin: 1%;
 }
 .producto img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
     border-radius: 10px;
 }
-.producto p {
+.producto p {    
     text-align: center;
     font-family: "Montserrat", serif;
+    margin: 0%;
+    color: #6bb2cc;
 }
 input[type="submit"] {
     font-family: "Montserrat", serif;
+    color: white;
     border: none;
-    background-color: rgb(247, 190, 169);
+    background-color: #6bb2cc;
     padding: 5px;
     border-radius: 5px;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    font-family: "Montserrat", serif;
+    color: #6bb2cc;
+    border: none;
+    border-width: 1px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+.pagination{    
+    justify-content: center;
+    padding: 10px;
+}
+.page {
+    align-items: flex-end;
 }
 
 /* ---- Contacto ---- */
@@ -183,7 +220,7 @@ input[type="submit"] {
 .title--contact {
     font-family: "Dancing Script", serif;
     text-align: center;
-    background-color: rgba(255, 127, 80, 0.479);
+    background-color: #F0ada7;
     padding: 20px;
 }
 
@@ -211,14 +248,16 @@ input[type="email"] {
     margin-right: 15px;
 }
 .form input[type="submit"] {
-    background-color: rgb(247, 190, 169);
+    background-color: #F0ada7;
+    color: white;
     padding: 10px 20px;
     border: none;
     margin-left: 15px;
     margin-top: 15px;
     font-family: "Montserrat", serif;
     justify-content: flex-start;
-    align-items: flex-end;    
+    align-items: flex-end;
+    width: auto;   
 }
 
 .mapa iframe {
@@ -235,9 +274,6 @@ input[type="email"] {
     padding: 10px;
     text-align: center;
 }
-/*.contacto ul li {
-    text-align: justify;
-}*/
 .contacto ul li img {
     width: 30px;
 }
@@ -246,15 +282,13 @@ input[type="email"] {
 
 footer {    
     background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    height: 50px;
+    height: 5px;
 }
 
 .nav-footer ul {
     list-style: none;
     justify-content: center;
-    text-align: center;  
+    text-align: center;     
 }
 .nav-footer ul li {
     margin: 10px;
@@ -268,7 +302,7 @@ footer {
     align-items: center;
 }
 .info-inf-izq {    
-    padding: 20px;
+    padding: 10px;
 }
 .info-inf-der ul li {
     list-style: none;
@@ -277,4 +311,58 @@ footer {
 
 .info-inf-der ul li img {
     width: 30px;    
+}
+
+/* ---- Media queries ---- */
+
+@media (max-width: 400px) {
+    /* -- Header -- */
+    header {        
+        flex-direction: column;
+        padding: 0px;       
+    }
+    .marca-logo ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* -- Nosotros -- */ 
+    .sector-personas {        
+        grid-template-columns: 1fr;        
+    }
+    .personas {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "imagen"
+        "h2"
+        "p";
+    }
+
+    /* -- Productos -- */
+    .sector-productos {        
+        grid-template-columns: repeat(2, 1fr);        
+    }
+
+    /* -- Contacto -- */
+    .main--contact {        
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title"
+        "form"
+        "mapa"
+        "contacto";
+    }
+    .contacto ul {
+        flex-direction: column;        
+    }
+
+    /* -- Footer -- */  
+    .nav-footer ul li {
+        display: list-item;
+        margin: 0.5%;
+    }   
+    .info-inf {
+        flex-direction: column;        
+        align-items: center;        
+    }
 }
