@@ -1,0 +1,10 @@
+main {
+    background-color: $secondary-color;
+    flex-flow: 1;    
+    .inicio {
+        padding: 30px;
+        background-image: url(../images/index/inicio.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

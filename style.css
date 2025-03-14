@@ -1,368 +1,341 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
-}
-body {
-    font-family: "Montserrat", serif;    
-}
-h1, h2 {
-    font-family: "Montserrat", serif;
-    text-align: center;
-    padding: 10px;
-}
-h4, h5 {
-    font-family: "Montserrat", serif;
-    color: #6bb2cc;
-}
-.title {
-    font-family: "Dancing Script", serif;
-    text-align: center;
-    background-color: #F0ada7;
-    padding: 20px;
-}
-
-/* ---- Header ---- */
-
 header {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;  
-    align-items: center;
-    padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
-.marca-logo {
-    justify-content: flex-start;
+header .marca-logo {
+  justify-content: flex-start;
 }
-.marca-logo ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+header .marca-logo ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
-.marca-logo img {       
-    width: 60px;
-    height: 60px;    
+header .marca-logo ul li img {
+  width: 60px;
+  height: 60px;
 }
-.marca-logo ul li p {    
-    font-family: "Dancing Script", serif;
-    font-size: 40px;
-    color: #F0ada7;    
+header .marca-logo ul li p {
+  font-family: "Dancing Script", serif;
+  font-size: 40px;
+  color: #f0ada7;
 }
-
-.nav-header ul {
-    list-style: none;    
-    justify-content: center;    
-    flex-wrap: wrap;
-    text-align: center;        
+header .nav-header ul {
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
-.nav-header ul li {
-    display: inline;
-    font-family: "Montserrat", serif;        
-    margin: 10px;
-    color: #F0ada7;  
+header .nav-header ul li {
+  display: inline;
+  font-family: "Montserrat", serif;
+  margin: 10px;
+  color: #f0ada7;
 }
-
-.buscador ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: center;
-           
+header .buscador ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
 }
-.buscador img {    
-    width: 30px;
-    margin: 10px;
+header .buscador ul li .btn-1 {
+  font-family: "Montserrat", serif;
 }
-.btn-1 {
-    font-family: "Montserrat", serif;
+header .buscador ul li .btn-1:hover {
+  border-color: #f0ada7;
 }
-.btn-1:hover {
-    border-color: #F0ada7;
+header .buscador ul li .btn-2 {
+  font-family: "Montserrat", serif;
+  color: #f0ada7;
+  border-color: #f0ada7;
 }
-.btn-2 {
-    font-family: "Montserrat", serif;
-    color: rgb(247, 190, 169);
-    border-color: rgb(247, 190, 169);
+header .buscador ul li .btn-2:hover {
+  background-color: #f0ada7;
+  color: white;
 }
-.btn-2:hover {    
-    background-color: rgb(247, 190, 169);
+header .buscador ul li img {
+  width: 30px;
+  margin: 10px;
 }
-/* ---- Main Index---- */
 
 main {
-    background-color: #f7e3da;
-    flex-grow: 1;  
+  background-color: #f7e3da;
+  flex-flow: 1;
 }
-
-.inicio {
-    padding: 30px;
-    background-image: url(./images/index/inicio.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+main .inicio {
+  padding: 30px;
+  background-image: url(../images/index/inicio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-/* ---- Nosotros ---- */
 
 .sector-personas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2%;
 }
-.personas {
-    border: solid;
-    border-width: 1px;
-    border-color: #6bb2cc;
-    border-radius: 10px;
-    margin: 2%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "imagen h2"
-    "imagen p"; 
+.sector-personas .personas {
+  border: solid;
+  border-width: 1px;
+  border-color: #6bb2cc;
+  border-radius: 10px;
+  margin: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "imagen h2" "imagen p";
 }
-.personas img {
-    width: 100%;
-    border-radius: 10px;
-    grid-area: imagen;    
+.sector-personas .personas img {
+  width: 100%;
+  border-radius: 10px;
+  grid-area: imagen;
 }
-.personas h2 {
-    font-family: "Montserrat", serif;
-    color: #6bb2cc;
-    grid-area: h2;   
+.sector-personas .personas h2 {
+  font-family: "Montserrat", serif;
+  color: #6bb2cc;
+  grid-area: h2;
+  grid-column: span 5;
 }
-.personas p {
-    font-family: "Montserrat", serif;   
-    text-align: justify;
-    grid-area: p;
-    margin: 2%;
+.sector-personas .personas p {
+  font-family: "Montserrat", serif;
+  text-align: justify;
+  grid-area: p;
+  margin: 2%;
 }
-
-.img-taller {
-    margin: 3%;
-}
-
-/* ---- Productos ---- */
 
 .sector-productos {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 5%;
 }
-.producto {    
-    border: solid;
-    border-width: 1px;
-    border-color: #6bb2cc;
-    border-radius: 10px;
-    margin: 1%;
+.sector-productos .producto {
+  border: solid;
+  border-width: 1px;
+  border-color: #6bb2cc;
+  border-radius: 10px;
+  margin: 2%;
+  width: 350px;
+  animation: products 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-.producto img {
-    width: 100%;
-    border-radius: 10px;
+.sector-productos .producto img {
+  width: 100%;
+  border-radius: 10px;
 }
-.producto p {    
-    text-align: center;
-    font-family: "Montserrat", serif;
-    margin: 0%;
-    color: #6bb2cc;
+.sector-productos .producto p {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  margin: 0%;
+  color: #6bb2cc;
 }
-input[type="submit"] {
-    font-family: "Montserrat", serif;
-    color: white;
-    border: none;
-    background-color: #6bb2cc;
-    padding: 5px;
-    border-radius: 5px;
-    width: 100%;
+.sector-productos .producto input[type=submit] {
+  font-family: "Montserrat", serif;
+  color: white;
+  border: none;
+  background-color: #6bb2cc;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
 }
-input[type="submit"]:hover {
-    font-family: "Montserrat", serif;
-    color: #6bb2cc;
-    border: none;
-    border-width: 1px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
-    width: 100%;
-}
-.pagination{    
-    justify-content: center;
-    padding: 10px;
-}
-.page {
-    align-items: flex-end;
+.sector-productos .producto input[type=submit]:hover {
+  color: #6bb2cc;
+  background-color: white;
 }
 
-/* ---- Contacto ---- */
+.pagination {
+  justify-content: center;
+  padding: 10px;
+}
+
+.title--contact {
+  animation: titles 0.8s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
+}
 
 .main--contact {
-    display: grid;
-    grid-template-columns: 45% 1fr;
-    grid-template-areas:
-    "title title"
-    "form mapa"
-    "form contacto";
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  grid-template-areas: "title title" "form mapa" "form contacto";
 }
-.title--contact {
-    grid-area: title;
+.main--contact .title--contact {
+  grid-area: title;
+  font-family: "Dancing Script", serif;
+  text-align: center;
+  background-color: #f0ada7;
+  padding: 20px;
 }
-.form {
-    grid-area: form;
+.main--contact .form {
+  grid-area: form;
 }
-.mapa {
-    grid-area: mapa;
+.main--contact .form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-family: "Montserrat", serif;
 }
-.contacto {
-    grid-area: contacto;
+.main--contact .form input[type=text], .main--contact .form input[type=email] {
+  width: 95%;
+  padding: 15px;
+  margin-inline-start: 15px;
+  margin-right: 15px;
+}
+.main--contact .form textarea {
+  width: 95%;
+  height: 90%;
+  padding: 15px;
+  margin-inline-start: 15px;
+  margin-right: 15px;
+}
+.main--contact .form input[type=submit] {
+  font-family: "Montserrat", serif;
+  color: white;
+  border: none;
+  background-color: #f0ada7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: auto;
+  margin-left: 15px;
+  margin-top: 15px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.main--contact .mapa {
+  grid-area: mapa;
+}
+.main--contact .mapa iframe {
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px;
+}
+.main--contact .contacto {
+  grid-area: contacto;
+}
+.main--contact .contacto ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+.main--contact .contacto ul li img {
+  width: 30px;
 }
 
-.title--contact {
-    font-family: "Dancing Script", serif;
-    text-align: center;
-    background-color: #F0ada7;
-    padding: 20px;
+footer {
+  background-color: white;
+  height: 5px;
+}
+footer .nav-footer ul {
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+footer .nav-footer ul li {
+  margin: 10px;
+  display: inline;
+}
+footer .info-inf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .info-inf .info-inf-izq {
+  padding: 10px;
+}
+footer .info-inf .info-inf-der ul li {
+  list-style: none;
+  display: inline;
+}
+footer .info-inf .info-inf-der ul li img {
+  width: 30px;
 }
 
-.form label {
-    display: flex;
+@media (max-width: 600px) {
+  header {
     flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 15px;
-    padding-top: 10px;
-    font-family: "Montserrat", serif;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: 95%;
-    padding: 15px;
-    margin-inline-start: 15px;
-    margin-right: 15px;
-}
-.form textarea {
-    width: 95%;
-    height: 90%;
-    padding: 15px;
-    margin-inline-start: 15px;
-    margin-right: 15px;
-}
-.form input[type="submit"] {
-    background-color: #F0ada7;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    margin-left: 15px;
-    margin-top: 15px;
-    font-family: "Montserrat", serif;
-    justify-content: flex-start;
-    align-items: flex-end;
-    width: auto;   
-}
-
-.mapa iframe {
-    width: 100%;
-    border-radius: 25px;
-    padding: 10px;
-}
-
-.contacto ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    text-align: center;
-}
-.contacto ul li img {
-    width: 30px;
-}
-
-/* ---- Footer ---- */
-
-footer {    
-    background-color: rgb(255, 255, 255);
-    height: 5px;
-}
-
-.nav-footer ul {
-    list-style: none;
-    justify-content: center;
-    text-align: center;     
-}
-.nav-footer ul li {
-    margin: 10px;
-    display: inline;
-}
-
-.info-inf {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 0px;
+  }
+  header .marca-logo ul {
+    flex-direction: column;
     align-items: center;
+  }
+  .sector-personas {
+    grid-template-columns: 1fr;
+  }
+  .sector-personas .personas {
+    grid-template-columns: 1fr;
+    grid-template-areas: "imagen" "h2" "p";
+  }
+  .sector-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+  .sector-productos .producto {
+    width: 90%;
+  }
+  .main--contact {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "form" "mapa" "contacto";
+  }
+  .main--contact .contacto ul {
+    flex-direction: column;
+  }
+  footer .nav-footer ul li {
+    display: list-item;
+    margin: 0.5%;
+  }
+  footer .info-inf {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.info-inf-izq {    
-    padding: 10px;
+@keyframes titles {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
 }
-.info-inf-der ul li {
-    list-style: none;
-    display: inline;
+@keyframes products {
+  0% {
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+h1, h2 {
+  font-family: "Montserrat", serif;
+  text-align: center;
+  padding: 1px;
 }
 
-.info-inf-der ul li img {
-    width: 30px;    
+h4, h5 {
+  font-family: "Montserrat", serif;
+  color: #6bb2cc;
 }
 
-/* ---- Media queries ---- */
-
-@media (max-width: 400px) {
-    /* -- Header -- */
-    header {        
-        flex-direction: column;
-        padding: 0px;       
-    }
-    .marca-logo ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    /* -- Nosotros -- */ 
-    .sector-personas {        
-        grid-template-columns: 1fr;        
-    }
-    .personas {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "imagen"
-        "h2"
-        "p";
-    }
-
-    /* -- Productos -- */
-    .sector-productos {        
-        grid-template-columns: repeat(2, 1fr);        
-    }
-
-    /* -- Contacto -- */
-    .main--contact {        
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "title"
-        "form"
-        "mapa"
-        "contacto";
-    }
-    .contacto ul {
-        flex-direction: column;        
-    }
-
-    /* -- Footer -- */  
-    .nav-footer ul li {
-        display: list-item;
-        margin: 0.5%;
-    }   
-    .info-inf {
-        flex-direction: column;        
-        align-items: center;        
-    }
+.title {
+  font-family: "Dancing Script", serif;
+  text-align: center;
+  background-color: #f0ada7;
+  padding: 20px;
+  animation: titles 0.8s cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
 }
+
+/*# sourceMappingURL=style.css.map */

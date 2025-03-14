@@ -1,0 +1,71 @@
+header {
+    background-color: $nav-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .marca-logo {
+        justify-content: flex-start;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            li {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                p {
+                    font-family: $logo-font-family;
+                    font-size: 40px;
+                    color: $primary-color;
+                };
+            }            
+        }
+    }
+    .nav-header {
+        ul {
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            li {
+                display: inline;
+                font-family: $main-font-family;
+                margin: 10px;
+                color: $primary-color;
+            }
+        }
+    }
+    .buscador{
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-content: center;
+            li {
+                .btn-1 {
+                    font-family: $main-font-family;
+                }
+                .btn-1:hover {
+                    border-color: $primary-color;
+                }
+                .btn-2 {
+                    font-family: $main-font-family;
+                    color: $primary-color;
+                    border-color: $primary-color;
+                }
+                .btn-2:hover {
+                    background-color: $primary-color;
+                    color: $nav-color;
+                }
+                img {
+                    width: 30px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}

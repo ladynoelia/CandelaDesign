@@ -1,0 +1,61 @@
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 0px;
+        .marca-logo {
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .sector-personas {
+        grid-template-columns: 1fr;
+        .personas {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "imagen"
+            "h2"
+            "p";
+        }
+    }
+    
+    .sector-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        .producto {
+            width: 90%;
+        }
+    }
+
+    .main--contact {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title"
+        "form"
+        "mapa"
+        "contacto";
+        .contacto {
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+
+    footer {
+        .nav-footer {
+            ul {
+                li {
+                    display: list-item;
+                    margin: 0.5%;
+                }
+            }
+        }
+        .info-inf {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

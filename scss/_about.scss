@@ -1,0 +1,30 @@
+.sector-personas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2%;
+    .personas {
+        @include fichas (solid, 1px, $tertiary-color,10px, 2%);        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "imagen h2"
+        "imagen p";
+        img {
+            width: 100%;
+            border-radius: 10px;
+            grid-area: imagen;
+        }
+        h2 {
+            font-family: $main-font-family;
+            color: $tertiary-color;
+            grid-area: h2;
+            grid-column: span 5;
+        }
+        p {
+            font-family: $main-font-family;
+            text-align: justify;
+            grid-area: p;
+            margin: 2%;
+        }
+    }
+}
