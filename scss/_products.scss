@@ -18,7 +18,7 @@
             color: $tertiary-color;
         }
         input[type="submit"] {
-            @include button ($main-font-family, $btn-color, none, $tertiary-color, 5px, 5px, 100%);
+            @include button ($main-font-family, $btn-color, none, $tertiary-color, 5px, 5px, 100%);                   
         }
         input[type="submit"]:hover {
             color: $tertiary-color;     

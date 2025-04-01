@@ -1,30 +1,29 @@
 .sector-personas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 2%;
+    margin: 1%;
     .personas {
         @include fichas (solid, 1px, $tertiary-color,10px, 2%);        
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "imagen h2"
-        "imagen p";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         img {
             width: 100%;
+            height: 100%;
             border-radius: 10px;
-            grid-area: imagen;
+            float: left;            
         }
-        h2 {
+        .personas_text {
+            h2 {
+                font-family: $main-font-family;
+                color: $tertiary-color;            
+            }
+            p {
             font-family: $main-font-family;
-            color: $tertiary-color;
-            grid-area: h2;
-            grid-column: span 5;
-        }
-        p {
-            font-family: $main-font-family;
-            text-align: justify;
-            grid-area: p;
+            text-align: justify;        
             margin: 2%;
-        }
+            }        
+        }        
     }
 }

@@ -1,26 +1,11 @@
-$primary-color: #f0ada7;
-$secondary-color: #f7e3da;
-$tertiary-color: #6bb2cc;
+$primary-color: #ffd8d8;
+$secondary-color: #fffcdd;
+$tertiary-color: #f5a2a2;
+$quaternay-color: #805841;
+$quinary-color: #dcf7f3;
 $nav-color: white;
 $btn-color: white;
 
 $logo-font-family: "Dancing Script", serif;
 $main-font-family: "Montserrat", serif;
-
-@mixin fichas ($border, $borwidth, $borcolor, $borradius, $margin){
-    border: $border;
-    border-width: $borwidth;
-    border-color: $borcolor;
-    border-radius: $borradius;
-    margin: $margin; 
-}
-
-@mixin button ($fontfamily, $fontcolor, $border, $backcolor, $padd, $borradius, $width){
-    font-family: $fontfamily;
-    color: $fontcolor;
-    border: $border;
-    background-color: $backcolor;
-    padding: $padd;
-    border-radius: $borradius;
-    width: $width;
-}
+$main-index-font: "Gochi Hand", cursive;

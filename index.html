@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="manualidades hechas con lana, usando dos aguajas o tricot y crochet">
+    <meta name="keywords" content="tejido a dos agujas o tricot, crochet, vestidos de bebé, bolsos de lana, hechos a mano, amigurumi, peluches">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -44,80 +47,35 @@
         </div>                        
     </header>
     
-    <main>        
-        <section class="inicio">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">                      
-                    <div class="carousel-item active">
-                        <img src="./images/index/inicio1.png" class="d-block w-100" alt="lana">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/index/carrusel1.jpg" class="d-block w-100" alt="infante con sweater">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/index/carrusel2.jpg" class="d-block w-100" alt="manga de kimono">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/index/carrusel3.jpg" class="d-block w-100" alt="manta">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/index/carrusel4.jpg" class="d-block w-100" alt="tejido">
-                    </div>
-                </div>
-                <div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>                          
-        </section>
-    
-        <section class="sector-productos">
-                <h2>Destacados</h2>
-                <div class="producto">
-                    <img src="./images/accesorios/gorro-crochet-1.png" alt="gorro a crochet">
-                    <p>Gorro a crochet</p>
-                    <p>$5500</p>
-                </div>
-                <div class="producto">
-                    <img src="./images/accesorios/hebillas.jpeg" alt="hebillas">
-                    <p>Hebillas</p>
-                    <p>$2300</p>
-                </div>
-                <div class="producto">
-                    <img src="./images/bandoleras/bolso-trapillo-2.jpg" alt="bolso de trapillo">
-                    <p>Bandolera de trapillo</p>
-                    <p>$12000</p>
-                </div>
-                <div class="producto">
-                    <img src="./images/vestidos/vestido-1.jpg" alt="vestido gris">
-                    <p>Vestido a dos agujas</p>
-                    <p>$14500</p>
-                </div>
-                <div class="producto">
-                    <img src="./images/vestidos/vestido-5.jpg" alt="vestido azul">
-                    <p>Vestido a crochet</p>
-                    <p>$16000</p>
-                </div>
-                <div class="producto">
-                    <img src="./images/vestidos/vestido-4.jpg" alt="vestido con rosas">
-                    <p>Vestido con rosas a crochet</p>
-                    <p>$15600</p>
-                </div>
-        </section>
-            
+    <main class="inicio">
+        <div class="inicio__grid">            
+            <div class="inicio__titulo">
+                <img src="./images/index/title.png" alt="regalo">                
+                <h1>¡Bienvenidos a Candela Design!</h1>
+                <img src="./images/logo.png" alt="logo empresa">                
+            </div>            
+            <div class="inicio__acce">
+                <a href="./pages/accesorios.html"><img src="./images/index/acce.png" alt="moño"></a>
+                <h2>Accesorios</h2>
+            </div>
+            <div class="inicio__about">
+                <a href="./pages/nosotros.html"><img src="./images/index/about.png" alt="persona"></a>
+                <h2>Sobre nosotros</h2>                
+            </div>
+            <div class="inicio__bags">
+                <a href="./pages/bandoleras.html"><img src="./images/index/bag.png" alt="bolso"></a>
+                <h2>Bandoleras</h2>
+            </div>
+            <div class="inicio__dress">
+                <a href="./pages/vestidos.html"><img src="./images/index/dress.png" alt="vestido"></a>
+                <h2>Vestidos</h2>
+            </div>
+            <div class="inicio__contact">
+                <a href="./pages/contacto.html"><img src="./images/index/contact2.png" alt="globos de dialogo"></a>
+                <h2>Contacto</h2>
+            </div>           
+        </div>              
+              
     </main>
     
     <footer>

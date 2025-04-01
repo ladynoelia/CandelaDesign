@@ -1,0 +1,17 @@
+@mixin fichas ($border, $borwidth, $borcolor, $borradius, $margin){
+    border: $border;
+    border-width: $borwidth;
+    border-color: $borcolor;
+    border-radius: $borradius;
+    margin: $margin; 
+}
+
+@mixin button ($fontfamily, $fontcolor, $border, $backcolor, $padd, $borradius, $width){
+    font-family: $fontfamily;
+    color: $fontcolor;
+    border: $border;
+    background-color: $backcolor;
+    padding: $padd;
+    border-radius: $borradius;
+    width: $width;
+}

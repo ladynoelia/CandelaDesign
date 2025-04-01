@@ -1,10 +1,65 @@
-main {
-    background-color: $secondary-color;
-    flex-flow: 1;    
-    .inicio {
-        padding: 30px;
-        background-image: url(../images/index/inicio.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+.inicio {
+    background-color: white;
+    h1, h2, h3 {
+        font-family: $main-index-font;
+        color: white;
+        text-align: center;        
     }
+    .inicio__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 19.5%);
+        grid-template-areas:
+        "title title title title title"
+        "about acce bags dress contact";
+        column-gap: 1%;
+        row-gap: 1%;
+        margin: 1%;
+        gap: 10px;        
+        .inicio__titulo {
+            grid-area: title;            
+            background-color: $secondary-color;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            h1 {
+                color: $quaternay-color;
+            }
+            img {
+                width: 10%;
+            }
+        }        
+        .inicio__acce {
+            grid-area: acce;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $tertiary-color;
+            img {
+                width: 100%;
+            }         
+        }
+        .inicio__about {
+            grid-area: about;
+            @extend .inicio__acce;
+            background-color: $quaternay-color;        
+        }
+        .inicio__bags {
+            grid-area: bags;
+            @extend .inicio__acce;
+            background-color: $quinary-color;  
+        }        
+        .inicio__dress {
+            grid-area: dress;
+            @extend .inicio__acce;
+            background-color: $primary-color;            
+        }
+        .inicio__contact {
+            grid-area: contact;
+            @extend .inicio__acce;                        
+            background-color: $tertiary-color;              
+        }           
+    }  
 }
